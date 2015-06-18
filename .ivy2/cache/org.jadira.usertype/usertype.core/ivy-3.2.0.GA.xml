@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.jadira.usertype"
+		module="usertype.core"
+		revision="3.2.0.GA"
+		status="release"
+		publication="20140423190723"
+	>
+		<description homepage="">
+		Classes utilising Joda Time, Joda Money, Libphonenum and JDK Types that add Hibernate support
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="usertype.core" type="jar" ext="jar" conf="master"/>
+		<artifact name="usertype.core" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="usertype.core" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.hibernate" name="hibernate-core" rev="4.3.4.Final" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="4.3.4.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="joda-time" name="joda-time" rev="2.3" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.joda" name="joda-money" rev="0.9" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.javassist" name="javassist" rev="3.14.0-GA" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.0-rc1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.8.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.dbunit" name="dbunit" rev="2.4.9" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="com.h2database" name="h2" rev="1.4.177" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="joda-time" name="joda-time-hibernate" rev="1.3" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="joda-time" module="joda-time" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jadira.usertype" name="usertype.spi" rev="3.2.0.GA" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jadira.usertype" name="usertype.spi" rev="3.2.0.GA" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="usertype.spi" type="test-jar" ext="jar" conf="" m:classifier="tests"/>
+		</dependency>
+		<dependency org="org.jadira.cdt" name="cdt" rev="3.2.0.GA" force="true" conf="optional->compile(*),master(*)"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-glassfish-remote-3.1" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.atinject" module="inject-tck" matcher="exact" rev="1.0.0-PFD-3"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-api" matcher="exact" rev="1.0.3.Final"/>
+		<override org="javax.enterprise" module="cdi-api" matcher="exact" rev="1.0-SP3"/>
+		<override org="org.dynalang" module="dynalink" matcher="exact" rev="0.7"/>
+		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.activemq" module="activemq-broker" matcher="exact" rev="5.9.1"/>
+		<override org="org.slf4j" module="slf4j-ext" matcher="exact" rev="1.7.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-servlet_2.5_spec" matcher="exact" rev="1.2"/>
+		<override org="javax.jms" module="jms" matcher="exact" rev="1.1"/>
+		<override org="org.jboss.weld.se" module="weld-se-core" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jbossas-managed-6" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jbossas-remote-6" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="org.apache.activemq" module="activemq-client" matcher="exact" rev="5.9.1"/>
+		<override org="org.springframework" module="spring-tx" matcher="exact" rev="4.0.3.RELEASE"/>
+		<override org="org.jboss.weld" module="weld-api" matcher="exact" rev="1.1.Final"/>
+		<override org="javax.persistence" module="persistence-api" matcher="exact" rev="1.0"/>
+		<override org="org.jboss" module="jboss-mdr" matcher="exact" rev="2.0.1.GA"/>
+		<override org="net.sf.oval" module="oval" matcher="exact" rev="1.84"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-container" matcher="exact" rev="1.0.3.Final"/>
+		<override org="org.databene" module="contiperf" matcher="exact" rev="1.06"/>
+		<override org="com.googlecode.juniversalchardet" module="juniversalchardet" matcher="exact" rev="1.0.3"/>
+		<override org="org.jboss.as" module="jboss-as-arquillian-common" matcher="exact" rev="7.1.1.Final"/>
+		<override org="net.sourceforge.htmlunit" module="htmlunit" matcher="exact" rev="2.4"/>
+		<override org="org.jboss.test-harness" module="jboss-test-harness" matcher="exact" rev="1.1.0-CR9"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.1"/>
+		<override org="org.javassist" module="javassist" matcher="exact" rev="3.14.0-GA"/>
+		<override org="javax.servlet" module="servlet-api" matcher="exact" rev="2.5"/>
+		<override org="javax.activation" module="activation" matcher="exact" rev="1.1"/>
+		<override org="org.jboss.test-harness" module="jboss-test-harness-jboss-as-50" matcher="exact" rev="1.1.0-CR9"/>
+		<override org="org.jboss.narayana.jta" module="narayana-jta" matcher="exact" rev="5.0.1.Final"/>
+		<override org="javax.validation" module="validation-api" matcher="exact" rev="1.0.0.GA"/>
+		<override org="org.hibernate" module="hibernate-core" matcher="exact" rev="4.3.4.Final"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.6"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.2"/>
+		<override org="joda-time" module="joda-time" matcher="exact" rev="2.3"/>
+		<override org="net.sourceforge.fmpp" module="fmpp" matcher="exact" rev="0.9.14"/>
+		<override org="org.jboss.weld" module="weld-porting-package" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss" module="jboss-vfs" matcher="exact" rev="2.1.3.SP1"/>
+		<override org="org.apache.logging.log4j" module="log4j-slf4j-impl" matcher="exact" rev="2.0-rc1"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-weld-ee-embedded-1.1" matcher="exact" rev="1.0.0.CR4"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jpa_2.0_spec" matcher="exact" rev="1.1"/>
+		<override org="org.jboss.jbossas" module="jboss-server-manager" matcher="exact" rev="1.0.3.GA"/>
+		<override org="org.jboss.metadata" module="jboss-metadata" matcher="exact" rev="1.0.0.CR16"/>
+		<override org="org.aspectj" module="aspectjweaver" matcher="exact" rev="1.7.4"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jetty-embedded-6.1" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-impl-base" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-spi" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.2"/>
+		<override org="jboss" module="jnp-client" matcher="exact" rev="4.0.2"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-glassfish-embedded-3.1" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.jboss.jsr299.tck" module="jsr299-tck-impl" matcher="exact" rev="1.0.4.SP3"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jetty-embedded-7" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.dbunit" module="dbunit" matcher="exact" rev="2.4.9"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="13.0.1"/>
+		<override org="org.jboss.weld.servlet" module="weld-servlet" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.test-harness" module="jboss-test-harness-tomcat" matcher="exact" rev="1.1.0-CR9"/>
+		<override org="javax.el" module="el-api" matcher="exact" rev="2.2"/>
+		<override org="org.hibernate" module="hibernate-entitymanager" matcher="exact" rev="4.3.4.Final"/>
+		<override org="javax.xml.ws" module="jaxws-api" matcher="exact" rev="2.1"/>
+		<override org="org.glassfish.web" module="el-impl" matcher="exact" rev="2.1.2-b04"/>
+		<override org="joda-time" module="joda-time-hibernate" matcher="exact" rev="1.3"/>
+		<override org="ch.qos.cal10n" module="cal10n-api" matcher="exact" rev="0.7.4"/>
+		<override org="net.sourceforge.collections" module="collections-generic" matcher="exact" rev="4.01"/>
+		<override org="org.jboss.weld" module="weld-core" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.weld" module="weld-spi" matcher="exact" rev="1.1.Final"/>
+		<override org="org.jboss.weld.se" module="weld-se" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.ejb3" module="jboss-ejb3-ext-api" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.0-rc1"/>
+		<override org="org.apache.xbean" module="xbean-spring" matcher="exact" rev="3.16"/>
+		<override org="org.javamoney" module="moneta" matcher="exact" rev="0.8"/>
+		<override org="javax.faces" module="jsf-api" matcher="exact" rev="1.2_13"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="4.0.3.RELEASE"/>
+		<override org="org.springframework" module="spring-jms" matcher="exact" rev="4.0.3.RELEASE"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-tomcat-embedded-6" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-tomcat-embedded-7" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="com.h2database" module="h2" matcher="exact" rev="1.4.177"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.1.4.GA"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl" matcher="exact" rev="1.1.0-beta-1"/>
+		<override org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_3.0_spec" matcher="exact" rev="1.0.0.Beta2"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.2"/>
+		<override org="org.jboss.test-harness" module="jboss-test-harness-jboss-as-60" matcher="exact" rev="1.1.0-CR9"/>
+		<override org="javax.inject" module="javax.inject" matcher="exact" rev="1"/>
+		<override org="org.springframework.batch" module="spring-batch-infrastructure" matcher="exact" rev="2.2.5.RELEASE"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.8.1"/>
+		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.2"/>
+		<override org="org.mutabilitydetector" module="MutabilityDetector" matcher="exact" rev="0.9"/>
+		<override org="com.googlecode.libphonenumber" module="libphonenumber" matcher="exact" rev="6.0"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-weld-se-embedded-1.1" matcher="exact" rev="1.0.0.CR6"/>
+		<override org="javax.jms" module="jms-api" matcher="exact" rev="1.1-rev-1"/>
+		<override org="de.schlichtherle" module="truezip" matcher="exact" rev="6.8.4"/>
+		<override org="org.jboss.as" module="jboss-as-arquillian-container-managed" matcher="exact" rev="7.1.1.Final"/>
+		<override org="org.jboss.jbossas.as7-cdi-tck" module="jbossas-container" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.jsr299.tck" module="jsr299-tck-api" matcher="exact" rev="1.0.4.SP3"/>
+		<override org="org.threeten" module="threetenbp" matcher="exact" rev="0.8.1"/>
+		<override org="org.aspectj" module="aspectjtools" matcher="exact" rev="1.7.4"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="4.0.3.RELEASE"/>
+		<override org="org.objenesis" module="objenesis" matcher="exact" rev="2.1"/>
+		<override org="org.jboss.jbossas" module="jboss-as-client" matcher="exact" rev="6.1.0.Final"/>
+		<override org="javax.transaction" module="jta" matcher="exact" rev="1.1"/>
+		<override org="org.joda" module="joda-money" matcher="exact" rev="0.9"/>
+		<override org="javax.servlet.jsp" module="jsp-api" matcher="exact" rev="2.1"/>
+		<override org="org.springframework" module="spring-orm" matcher="exact" rev="4.0.3.RELEASE"/>
+		<override org="javax.annotation" module="jsr250-api" matcher="exact" rev="1.0"/>
+		<override org="org.springframework.batch" module="spring-batch-core" matcher="exact" rev="2.2.5.RELEASE"/>
+		<override org="org.jboss.spec.javax.interceptor" module="jboss-interceptors-api_1.1_spec" matcher="exact" rev="1.0.0.Beta1"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-spi" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-impl-base" matcher="exact" rev="1.0.2.Final"/>
+		<override org="ma.glasnost.orika" module="orika-core" matcher="exact" rev="1.4.4"/>
+		<override org="org.aspectj" module="aspectjrt" matcher="exact" rev="1.7.4"/>
+		<override org="org.jboss.weld" module="weld-core-test" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.spec.javax.ejb" module="jboss-ejb-api_3.1_spec" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="org.jboss.weld.servlet" module="weld-servlet-core" matcher="exact" rev="1.1.12.Final"/>
+		<override org="org.jboss.as" module="jboss-as-arquillian-container-remote" matcher="exact" rev="7.1.1.Final"/>
+		<override org="org.jboss.test-harness" module="jboss-test-harness-jboss-embedded" matcher="exact" rev="1.1.0-CR9"/>
+		<override org="org.testng" module="testng" matcher="exact" rev="5.10"/>
+		<override org="org.joda" module="joda-convert" matcher="exact" rev="1.6"/>
+		<override org="org.springframework.integration" module="spring-integration-jms" matcher="exact" rev="3.0.1.RELEASE"/>
+		<override org="org.ow2.asm" module="asm-all" matcher="exact" rev="4.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-impl-base" matcher="exact" rev="1.0.0-cr-1"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="2.0.3"/>
+	</dependencies>
+</ivy-module>

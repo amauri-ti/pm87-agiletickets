@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="agiletickets"
+		module="agiletickets"
+		revision="working@caelum-20120927-15"
+		conf="test"
+		confs="default, provided, test, acceptance-test, minify"
+		date="20150121090039"/>
+	<dependencies>
+		<module organisation="org.hamcrest" name="hamcrest-all">
+			<revision name="1.1" status="release" pubdate="20070718161103" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="2">
+				<metadata-artifact status="successful" details="" size="479" time="814" location="/home/agil9999/.ivy2/cache/org.hamcrest/hamcrest-all/ivy-1.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hamcrest/hamcrest-all/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="test" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="hamcrest-all" type="jar" ext="jar" status="successful" details="" size="541839" time="1555" location="/home/agil9999/.ivy2/cache/org.hamcrest/hamcrest-all/jars/hamcrest-all-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mockito" name="mockito-all">
+			<revision name="1.8.5" status="release" pubdate="20100525153104" resolver="public" artresolver="main" homepage="http://www.mockito.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="1">
+				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
+				<metadata-artifact status="successful" details="" size="858" time="725" location="/home/agil9999/.ivy2/cache/org.mockito/mockito-all/ivy-1.8.5.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.mockito/mockito-all/ivy-1.8.5.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="test" rev="1.8.5" rev-constraint-default="1.8.5" rev-constraint-dynamic="1.8.5" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="mockito-all" type="jar" ext="jar" status="successful" details="" size="1419869" time="6837" location="/home/agil9999/.ivy2/cache/org.mockito/mockito-all/jars/mockito-all-1.8.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.2" status="release" pubdate="20101005055127" resolver="public" artresolver="main" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1482" time="821" location="/home/agil9999/.ivy2/cache/junit/junit/ivy-4.8.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/junit/junit/ivy-4.8.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="test" rev="4.8.2" rev-constraint-default="4.8.2" rev-constraint-dynamic="4.8.2" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="237344" time="954" location="/home/agil9999/.ivy2/cache/junit/junit/jars/junit-4.8.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

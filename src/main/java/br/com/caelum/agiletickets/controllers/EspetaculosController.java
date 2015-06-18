@@ -14,7 +14,7 @@ import br.com.caelum.agiletickets.domain.Agenda;
 import br.com.caelum.agiletickets.domain.DiretorioDeEstabelecimentos;
 import br.com.caelum.agiletickets.domain.precos.CalculadoraDePrecos;
 import br.com.caelum.agiletickets.models.Espetaculo;
-import br.com.caelum.agiletickets.models.Estabelecimento;
+//import br.com.caelum.agiletickets.models.Estabelecimento;
 import br.com.caelum.agiletickets.models.Periodicidade;
 import br.com.caelum.agiletickets.models.Sessao;
 import br.com.caelum.vraptor.Controller;
@@ -38,7 +38,7 @@ public class EspetaculosController {
 	private Validator validator;
 	private Agenda agenda;
 	private DiretorioDeEstabelecimentos estabelecimentos;
-	private Estabelecimento estabelecimento;
+	//private Estabelecimento estabelecimento;
 	
 	/** @deprecated CDI eyes only*/
 	protected EspetaculosController() {
@@ -145,8 +145,8 @@ public class EspetaculosController {
 	}
 
 	// metodo antigo. aqui soh por backup
-	private Estabelecimento criaEstabelecimento(Long id) {
+	/*private Estabelecimento criaEstabelecimento(Long id) {
 		return estabelecimentos.todos().get(0);
-	}
+	}*/
 	
 }

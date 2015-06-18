@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="agiletickets"
+		module="agiletickets"
+		revision="working@caelum-20120927-15"
+		conf="default"
+		confs="default, provided, test, acceptance-test, minify"
+		date="20150121090039"/>
+	<dependencies>
+		<module organisation="org.jadira.usertype" name="usertype.core">
+			<revision name="3.2.0.GA" status="release" pubdate="20140423190723" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="48">
+				<metadata-artifact status="successful" details="" size="4760" time="675" location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.core/ivy-3.2.0.GA.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.core/ivy-3.2.0.GA.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jadira/usertype/usertype.core/3.2.0.GA/usertype.core-3.2.0.GA.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="3.2.0.GA" rev-constraint-default="3.2.0.GA" rev-constraint-dynamic="3.2.0.GA" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="usertype.core" type="jar" ext="jar" status="successful" details="" size="143671" time="977" location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.core/jars/usertype.core-3.2.0.GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jadira/usertype/usertype.core/3.2.0.GA/usertype.core-3.2.0.GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jadira.usertype" name="usertype.spi">
+			<revision name="3.2.0.GA" status="release" pubdate="20140423190607" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="50">
+				<metadata-artifact status="successful" details="" size="5009" time="706" location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.spi/ivy-3.2.0.GA.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.spi/ivy-3.2.0.GA.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jadira/usertype/usertype.spi/3.2.0.GA/usertype.spi-3.2.0.GA.pom"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="3.2.0.GA" rev-constraint-default="3.2.0.GA" rev-constraint-dynamic="3.2.0.GA" callerrev="3.2.0.GA"/>
+				<artifacts>
+					<artifact name="usertype.spi" type="jar" ext="jar" status="successful" details="" size="84145" time="759" location="/home/agil9999/.ivy2/cache/org.jadira.usertype/usertype.spi/jars/usertype.spi-3.2.0.GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jadira/usertype/usertype.spi/3.2.0.GA/usertype.spi-3.2.0.GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.6" status="release" pubdate="20141201123439" resolver="public" artresolver="main" homepage="http://www.joda.org/joda-time/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master, master(*), compile(*), runtime(*)" position="47">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="27056" time="937" location="/home/agil9999/.ivy2/cache/joda-time/joda-time/ivy-2.6.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/joda-time/joda-time/ivy-2.6.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.6/joda-time-2.6.pom"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jodatime" conf="default, compile, runtime, master" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="4.0.0.Final"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="successful" details="" size="587512" time="1456" location="/home/agil9999/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.6/joda-time-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile(*), runtime(*)" position="-1">
+				<evicted-by rev="2.6"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jodatime" conf="default, compile, runtime, master" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="4.0.0.Final"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-validator-cdi">
+			<revision name="5.1.3.Final" status="release" pubdate="20141022104646" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="46">
+				<metadata-artifact status="successful" details="" size="7301" time="740" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator-cdi/ivy-5.1.3.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator-cdi/ivy-5.1.3.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator-cdi/5.1.3.Final/hibernate-validator-cdi-5.1.3.Final.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="5.1.3.Final" rev-constraint-default="5.1.3.Final" rev-constraint-dynamic="5.1.3.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="hibernate-validator-cdi" type="jar" ext="jar" status="successful" details="" size="34370" time="698" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator-cdi/jars/hibernate-validator-cdi-5.1.3.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator-cdi/5.1.3.Final/hibernate-validator-cdi-5.1.3.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-validator">
+			<revision name="5.1.3.Final" status="release" pubdate="20141022104535" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, master(*), compile(*), runtime, runtime(*), master" position="44">
+				<metadata-artifact status="successful" details="" size="13541" time="772" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.1.3.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.1.3.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator-cdi" conf="default, compile, runtime, master" rev="5.1.3.Final" rev-constraint-default="5.1.3.Final" rev-constraint-dynamic="5.1.3.Final" callerrev="5.1.3.Final"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="5.1.3.Final" rev-constraint-default="5.1.3.Final" rev-constraint-dynamic="5.1.3.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="hibernate-validator" type="jar" ext="jar" status="successful" details="" size="634265" time="1597" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.1.3.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml" name="classmate">
+			<revision name="1.0.0" status="release" pubdate="20131015230851" resolver="public" artresolver="main" homepage="http://github.com/cowtowncoder/java-classmate" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="45">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6562" time="704" location="/home/agil9999/.ivy2/cache/com.fasterxml/classmate/ivy-1.0.0.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.fasterxml/classmate/ivy-1.0.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="5.1.3.Final"/>
+				<artifacts>
+					<artifact name="classmate" type="bundle" ext="jar" status="successful" details="" size="60282" time="791" location="/home/agil9999/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-entitymanager">
+			<revision name="4.3.7.Final" status="release" pubdate="20141030110900" resolver="public" artresolver="main" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master, master(*), compile(*), runtime(*)" position="34">
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="successful" details="" size="3193" time="828" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-4.3.7.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-4.3.7.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/4.3.7.Final/hibernate-entitymanager-4.3.7.Final.pom"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="4.3.4.Final" rev-constraint-default="4.3.4.Final" rev-constraint-dynamic="4.3.4.Final" callerrev="3.2.0.GA"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.3.7.Final" rev-constraint-default="4.3.7.Final" rev-constraint-dynamic="4.3.7.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="hibernate-entitymanager" type="jar" ext="jar" status="successful" details="" size="647506" time="1586" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-entitymanager/jars/hibernate-entitymanager-4.3.7.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/4.3.7.Final/hibernate-entitymanager-4.3.7.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.3.4.Final" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default" position="-1">
+				<evicted-by rev="4.3.7.Final"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.3.7.Final" rev-constraint-default="4.3.7.Final" rev-constraint-dynamic="4.3.7.Final" callerrev="working@caelum-20120927-15"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="4.3.4.Final" rev-constraint-default="4.3.4.Final" rev-constraint-dynamic="4.3.4.Final" callerrev="3.2.0.GA"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-core">
+			<revision name="4.3.7.Final" status="release" pubdate="20141030110724" resolver="public" artresolver="main" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="36">
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="successful" details="" size="3345" time="696" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-core/ivy-4.3.7.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-core/ivy-4.3.7.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="4.3.7.Final" rev-constraint-default="4.3.7.Final" rev-constraint-dynamic="4.3.7.Final" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="hibernate-core" type="jar" ext="jar" status="successful" details="" size="5269315" time="8026" location="/home/agil9999/.ivy2/cache/org.hibernate/hibernate-core/jars/hibernate-core-4.3.7.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss" name="jandex">
+			<revision name="1.1.0.Final" status="release" pubdate="20130522165722" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="43">
+				<license name="AL 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2317" time="748" location="/home/agil9999/.ivy2/cache/org.jboss/jandex/ivy-1.1.0.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss/jandex/ivy-1.1.0.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="jandex" type="jar" ext="jar" status="successful" details="" size="76551" time="835" location="/home/agil9999/.ivy2/cache/org.jboss/jandex/jars/jandex-1.1.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="antlr" name="antlr">
+			<revision name="2.7.7" status="release" pubdate="20070113042839" resolver="public" artresolver="main" homepage="http://www.antlr.org/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="42">
+				<license name="BSD License" url="http://www.antlr.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="632" time="732" location="/home/agil9999/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.7.7" rev-constraint-default="2.7.7" rev-constraint-dynamic="2.7.7" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="antlr" type="jar" ext="jar" status="successful" details="" size="445288" time="1857" location="/home/agil9999/.ivy2/cache/antlr/antlr/jars/antlr-2.7.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate.common" name="hibernate-commons-annotations">
+			<revision name="4.0.5.Final" status="release" pubdate="20140711192350" resolver="public" artresolver="main" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="40">
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="successful" details="" size="2105" time="836" location="/home/agil9999/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/ivy-4.0.5.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/ivy-4.0.5.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="4.0.5.Final" rev-constraint-default="4.0.5.Final" rev-constraint-dynamic="4.0.5.Final" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="4.0.5.Final" rev-constraint-default="4.0.5.Final" rev-constraint-dynamic="4.0.5.Final" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="hibernate-commons-annotations" type="jar" ext="jar" status="successful" details="" size="75324" time="832" location="/home/agil9999/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/jars/hibernate-commons-annotations-4.0.5.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.spec.javax.transaction" name="jboss-transaction-api_1.2_spec">
+			<revision name="1.0.0.Final" status="release" pubdate="20131008164408" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="37">
+				<license name="Common Development and Distribution License" url="http://repository.jboss.org/licenses/cddl.txt"/>
+				<license name="GNU General Public License, Version 2 with the Classpath Exception" url="http://repository.jboss.org/licenses/gpl-2.0-ce.txt"/>
+				<metadata-artifact status="successful" details="" size="4574" time="701" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/ivy-1.0.0.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/ivy-1.0.0.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.0.0.Final" rev-constraint-default="1.0.0.Final" rev-constraint-dynamic="1.0.0.Final" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.0.0.Final" rev-constraint-default="1.0.0.Final" rev-constraint-dynamic="1.0.0.Final" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="jboss-transaction-api_1.2_spec" type="jar" ext="jar" status="successful" details="" size="27717" time="666" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/jars/jboss-transaction-api_1.2_spec-1.0.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.logging" name="jboss-logging-annotations">
+			<revision name="1.2.0.Beta1" status="release" pubdate="20130618204159" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="35">
+				<metadata-artifact status="successful" details="" size="1917" time="702" location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging-annotations/ivy-1.2.0.Beta1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging-annotations/ivy-1.2.0.Beta1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.pom"/>
+				<caller organisation="org.hibernate.common" name="hibernate-commons-annotations" conf="compile, runtime" rev="1.2.0.Beta1" rev-constraint-default="1.2.0.Beta1" rev-constraint-dynamic="1.2.0.Beta1" callerrev="4.0.5.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.2.0.Beta1" rev-constraint-default="1.2.0.Beta1" rev-constraint-dynamic="1.2.0.Beta1" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.2.0.Beta1" rev-constraint-default="1.2.0.Beta1" rev-constraint-dynamic="1.2.0.Beta1" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="jboss-logging-annotations" type="jar" ext="jar" status="successful" details="" size="11558" time="667" location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging-annotations/jars/jboss-logging-annotations-1.2.0.Beta1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="opensymphony" name="sitemesh">
+			<revision name="2.4.2" status="release" pubdate="20090425104704" resolver="public" artresolver="main" homepage="http://www.opensymphony.com/sitemesh" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="32">
+				<license name="The Apache Software License, Version 1.1" url="http://www.opensymphony.com/sitemesh/license.action"/>
+				<metadata-artifact status="successful" details="" size="2109" time="668" location="/home/agil9999/.ivy2/cache/opensymphony/sitemesh/ivy-2.4.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/opensymphony/sitemesh/ivy-2.4.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="sitemesh" type="jar" ext="jar" status="successful" details="" size="181259" time="942" location="/home/agil9999/.ivy2/cache/opensymphony/sitemesh/jars/sitemesh-2.4.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.34" status="release" pubdate="20141017030540" resolver="public" artresolver="main" homepage="http://dev.mysql.com/usingmysql/java/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="31">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/gpl.txt"/>
+				<metadata-artifact status="successful" details="" size="1263" time="752" location="/home/agil9999/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.34.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.34.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="5.1.34" rev-constraint-default="5.1.34" rev-constraint-dynamic="5.1.34" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="successful" details="" size="960372" time="2012" location="/home/agil9999/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="br.com.caelum.vraptor" name="vraptor-jodatime">
+			<revision name="4.0.0.Final" status="release" pubdate="20140530084607" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="30">
+				<metadata-artifact status="successful" details="" size="3115" time="2024" location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jodatime/ivy-4.0.0.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jodatime/ivy-4.0.0.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/vraptor-jodatime/4.0.0.Final/vraptor-jodatime-4.0.0.Final.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.0.0.Final" rev-constraint-default="4.0.0.Final" rev-constraint-dynamic="4.0.0.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="vraptor-jodatime" type="jar" ext="jar" status="successful" details="" size="7924" time="655" location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jodatime/jars/vraptor-jodatime-4.0.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/vraptor-jodatime/4.0.0.Final/vraptor-jodatime-4.0.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="br.com.caelum.vraptor" name="vraptor-jpa">
+			<revision name="4.0.2" status="release" pubdate="20140908131806" resolver="public" artresolver="main" homepage="http://vraptor.caelum.com.br" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="29">
+				<license name="Apache License, Version 2.0" url="http://apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4348" time="866" location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jpa/ivy-4.0.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jpa/ivy-4.0.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/vraptor-jpa/4.0.2/vraptor-jpa-4.0.2.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.0.2" rev-constraint-default="4.0.2" rev-constraint-dynamic="4.0.2" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="vraptor-jpa" type="jar" ext="jar" status="successful" details="" size="11129" time="682" location="/home/agil9999/.ivy2/cache/br.com.caelum.vraptor/vraptor-jpa/jars/vraptor-jpa-4.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/vraptor-jpa/4.0.2/vraptor-jpa-4.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate.javax.persistence" name="hibernate-jpa-2.1-api">
+			<revision name="1.0.0.Final" status="release" pubdate="20130726140144" resolver="public" artresolver="main" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="41">
+				<license name="Eclipse Public License (EPL), Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="Eclipse Distribution License (EDL), Version 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php"/>
+				<metadata-artifact status="successful" details="" size="2208" time="693" location="/home/agil9999/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/ivy-1.0.0.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/ivy-1.0.0.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.0.0.Final" rev-constraint-default="1.0.0.Final" rev-constraint-dynamic="1.0.0.Final" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.0.0.Final" rev-constraint-default="1.0.0.Final" rev-constraint-dynamic="1.0.0.Final" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="hibernate-jpa-2.1-api" type="jar" ext="jar" status="successful" details="" size="113371" time="1021" location="/home/agil9999/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/jars/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-log4j12">
+			<revision name="1.7.9" status="release" pubdate="20141216195905" resolver="public" artresolver="main" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="26">
+				<metadata-artifact status="successful" details="" size="1572" time="731" location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.9.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.9.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.9/slf4j-log4j12-1.7.9.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="slf4j-log4j12" type="jar" ext="jar" status="successful" details="" size="8867" time="662" location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.9/slf4j-log4j12-1.7.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.17" status="release" pubdate="20120526064339" resolver="public" artresolver="main" homepage="http://logging.apache.org/log4j/1.2/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="21745" time="832" location="/home/agil9999/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.7.9"/>
+				<artifacts>
+					<artifact name="log4j" type="bundle" ext="jar" status="successful" details="" size="489884" time="1234" location="/home/agil9999/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.9" status="release" pubdate="20141216195721" resolver="public" artresolver="main" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="27">
+				<metadata-artifact status="successful" details="" size="2660" time="684" location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.9.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.9.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9.pom"/>
+				<caller organisation="org.jadira.usertype" name="usertype.spi" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="3.2.0.GA"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="3.2.0.GA"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="4.1.3"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="default, compile, runtime, master" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="1.7.9"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="32121" time="689" location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130325175215" resolver="public" artresolver="main" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<metadata-artifact status="successful" details="" size="2689" time="655" location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.9"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="4.1.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="1.7.9"/>
+				<caller organisation="org.jadira.usertype" name="usertype.spi" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="3.2.0.GA"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="3.2.0.GA"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.weld" name="weld-core-impl">
+			<revision name="2.1.2.Final" status="release" pubdate="20140109062756" resolver="public" artresolver="main" homepage="http://weld.cdi-spec.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="22">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="5596" time="708" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-core-impl/ivy-2.1.2.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-core-impl/ivy-2.1.2.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/weld/weld-core-impl/2.1.2.Final/weld-core-impl-2.1.2.Final.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="2.1.2.Final" rev-constraint-default="2.1.2.Final" rev-constraint-dynamic="2.1.2.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="weld-core-impl" type="jar" ext="jar" status="successful" details="" size="1426602" time="2650" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-core-impl/jars/weld-core-impl-2.1.2.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/weld/weld-core-impl/2.1.2.Final/weld-core-impl-2.1.2.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.1" status="release" pubdate="20100225092158" resolver="public" artresolver="main" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="49">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="949" time="814" location="/home/agil9999/.ivy2/cache/junit/junit/ivy-4.8.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/junit/junit/ivy-4.8.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.pom"/>
+				<caller organisation="org.jadira.usertype" name="usertype.spi" conf="compile, runtime" rev="4.8.1" rev-constraint-default="4.8.1" rev-constraint-dynamic="4.8.1" callerrev="3.2.0.GA"/>
+				<caller organisation="org.jadira.usertype" name="usertype.core" conf="default, compile, runtime, master" rev="4.8.1" rev-constraint-default="4.8.1" rev-constraint-dynamic="4.8.1" callerrev="3.2.0.GA"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="237047" time="1045" location="/home/agil9999/.ivy2/cache/junit/junit/jars/junit-4.8.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.spec.javax.annotation" name="jboss-annotations-api_1.2_spec">
+			<revision name="1.0.0.Alpha1" status="release" pubdate="20130227010649" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="24">
+				<license name="CDDL or GPLv2 with exceptions" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="successful" details="" size="4280" time="748" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/ivy-1.0.0.Alpha1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/ivy-1.0.0.Alpha1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Alpha1/jboss-annotations-api_1.2_spec-1.0.0.Alpha1.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="1.0.0.Alpha1" rev-constraint-default="1.0.0.Alpha1" rev-constraint-dynamic="1.0.0.Alpha1" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="jboss-annotations-api_1.2_spec" type="jar" ext="jar" status="successful" details="" size="19203" time="666" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/jars/jboss-annotations-api_1.2_spec-1.0.0.Alpha1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Alpha1/jboss-annotations-api_1.2_spec-1.0.0.Alpha1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.classfilewriter" name="jboss-classfilewriter">
+			<revision name="1.0.4.Final" status="release" pubdate="20120727221618" resolver="public" artresolver="main" homepage="https://github.com/jbossas/jboss-classfilewriter" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="23">
+				<license name="Apache License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2535" time="1142" location="/home/agil9999/.ivy2/cache/org.jboss.classfilewriter/jboss-classfilewriter/ivy-1.0.4.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.classfilewriter/jboss-classfilewriter/ivy-1.0.4.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/classfilewriter/jboss-classfilewriter/1.0.4.Final/jboss-classfilewriter-1.0.4.Final.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="1.0.4.Final" rev-constraint-default="1.0.4.Final" rev-constraint-dynamic="1.0.4.Final" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="jboss-classfilewriter" type="jar" ext="jar" status="successful" details="" size="109892" time="864" location="/home/agil9999/.ivy2/cache/org.jboss.classfilewriter/jboss-classfilewriter/jars/jboss-classfilewriter-1.0.4.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/classfilewriter/jboss-classfilewriter/1.0.4.Final/jboss-classfilewriter-1.0.4.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.weld.servlet" name="weld-servlet-core">
+			<revision name="2.1.2.Final" status="release" pubdate="20140109064104" resolver="public" artresolver="main" homepage="http://weld.cdi-spec.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="15">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="4755" time="731" location="/home/agil9999/.ivy2/cache/org.jboss.weld.servlet/weld-servlet-core/ivy-2.1.2.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.weld.servlet/weld-servlet-core/ivy-2.1.2.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/weld/servlet/weld-servlet-core/2.1.2.Final/weld-servlet-core-2.1.2.Final.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="2.1.2.Final" rev-constraint-default="2.1.2.Final" rev-constraint-dynamic="2.1.2.Final" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="weld-servlet-core" type="jar" ext="jar" status="successful" details="" size="77346" time="727" location="/home/agil9999/.ivy2/cache/org.jboss.weld.servlet/weld-servlet-core/jars/weld-servlet-core-2.1.2.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/weld/servlet/weld-servlet-core/2.1.2.Final/weld-servlet-core-2.1.2.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.logging" name="jboss-logging">
+			<revision name="3.1.3.GA" status="release" pubdate="20130306010119" resolver="public" artresolver="main" homepage="http://www.jboss.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
+				<license name="Apache License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5000" time="696" location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.1.3.GA.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.1.3.GA.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.pom"/>
+				<caller organisation="org.hibernate.common" name="hibernate-commons-annotations" conf="compile, runtime" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="4.0.5.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="4.3.7.Final"/>
+				<caller organisation="org.jboss.weld.servlet" name="weld-servlet-core" conf="default, compile, runtime, master" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="2.1.2.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="default, compile, runtime, master" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="5.1.3.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="jboss-logging" type="jar" ext="jar" status="successful" details="" size="57183" time="731" location="/home/agil9999/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.1.3.GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.spec.javax.el" name="jboss-el-api_3.0_spec">
+			<revision name="1.0.0.Alpha1" status="release" pubdate="20130424180821" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="20">
+				<license name="Common Development and Distribution License" url="http://repository.jboss.org/licenses/cddl.txt"/>
+				<license name="GNU General Public License, Version 2 with the Classpath Exception" url="http://repository.jboss.org/licenses/gpl-2.0-ce.txt"/>
+				<metadata-artifact status="successful" details="" size="4395" time="678" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/ivy-1.0.0.Alpha1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/ivy-1.0.0.Alpha1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/spec/javax/el/jboss-el-api_3.0_spec/1.0.0.Alpha1/jboss-el-api_3.0_spec-1.0.0.Alpha1.pom"/>
+				<caller organisation="org.jboss.weld.servlet" name="weld-servlet-core" conf="default, compile, runtime, master" rev="1.0.0.Alpha1" rev-constraint-default="1.0.0.Alpha1" rev-constraint-dynamic="1.0.0.Alpha1" callerrev="2.1.2.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="1.0.0.Alpha1" rev-constraint-default="1.0.0.Alpha1" rev-constraint-dynamic="1.0.0.Alpha1" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="jboss-el-api_3.0_spec" type="jar" ext="jar" status="successful" details="" size="72021" time="725" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.el/jboss-el-api_3.0_spec/jars/jboss-el-api_3.0_spec-1.0.0.Alpha1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/spec/javax/el/jboss-el-api_3.0_spec/1.0.0.Alpha1/jboss-el-api_3.0_spec-1.0.0.Alpha1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.weld" name="weld-spi">
+			<revision name="2.1.Final" status="release" pubdate="20131011044702" resolver="public" artresolver="main" homepage="http://weld.cdi-spec.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2716" time="685" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-spi/ivy-2.1.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-spi/ivy-2.1.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/weld/weld-spi/2.1.Final/weld-spi-2.1.Final.pom"/>
+				<caller organisation="org.jboss.weld.servlet" name="weld-servlet-core" conf="default, compile, runtime, master" rev="2.1.Final" rev-constraint-default="2.1.Final" rev-constraint-dynamic="2.1.Final" callerrev="2.1.2.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="2.1.Final" rev-constraint-default="2.1.Final" rev-constraint-dynamic="2.1.Final" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="weld-spi" type="jar" ext="jar" status="successful" details="" size="75120" time="736" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-spi/jars/weld-spi-2.1.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/weld/weld-spi/2.1.Final/weld-spi-2.1.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.weld" name="weld-api">
+			<revision name="2.1.Final" status="release" pubdate="20131011044629" resolver="public" artresolver="main" homepage="http://weld.cdi-spec.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="1766" time="658" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-api/ivy-2.1.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-api/ivy-2.1.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/weld/weld-api/2.1.Final/weld-api-2.1.Final.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="2.1.Final" rev-constraint-default="2.1.Final" rev-constraint-dynamic="2.1.Final" callerrev="2.1.2.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-spi" conf="compile, runtime" rev="2.1.Final" rev-constraint-default="2.1.Final" rev-constraint-dynamic="2.1.Final" callerrev="2.1.Final"/>
+				<artifacts>
+					<artifact name="weld-api" type="jar" ext="jar" status="successful" details="" size="20866" time="676" location="/home/agil9999/.ivy2/cache/org.jboss.weld/weld-api/jars/weld-api-2.1.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/weld/weld-api/2.1.Final/weld-api-2.1.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.spec.javax.interceptor" name="jboss-interceptors-api_1.2_spec">
+			<revision name="1.0.0.Alpha3" status="release" pubdate="20130409150541" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="25">
+				<license name="Common Development and Distribution License" url="http://repository.jboss.org/licenses/cddl.txt"/>
+				<license name="GNU General Public License, Version 2 with the Classpath Exception" url="http://repository.jboss.org/licenses/gpl-2.0-ce.txt"/>
+				<metadata-artifact status="successful" details="" size="4514" time="700" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.2_spec/ivy-1.0.0.Alpha3.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.2_spec/ivy-1.0.0.Alpha3.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Alpha3/jboss-interceptors-api_1.2_spec-1.0.0.Alpha3.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="1.0.0.Alpha3" rev-constraint-default="1.0.0.Alpha3" rev-constraint-dynamic="1.0.0.Alpha3" callerrev="2.1.2.Final"/>
+				<artifacts>
+					<artifact name="jboss-interceptors-api_1.2_spec" type="jar" ext="jar" status="successful" details="" size="16242" time="674" location="/home/agil9999/.ivy2/cache/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.2_spec/jars/jboss-interceptors-api_1.2_spec-1.0.0.Alpha3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Alpha3/jboss-interceptors-api_1.2_spec-1.0.0.Alpha3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="br.com.caelum" name="vraptor">
+			<revision name="4.1.3" status="release" pubdate="20141218134802" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master, master(*), compile(*), runtime(*)" position="0">
+				<metadata-artifact status="successful" details="" size="8096" time="729" location="/home/agil9999/.ivy2/cache/br.com.caelum/vraptor/ivy-4.1.3.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/br.com.caelum/vraptor/ivy-4.1.3.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/4.1.3/vraptor-4.1.3.pom"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jpa" conf="default, compile, runtime, master" rev="4.1.0-RC2" rev-constraint-default="4.1.0-RC2" rev-constraint-dynamic="4.1.0-RC2" callerrev="4.0.2"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jodatime" conf="default, compile, runtime, master" rev="4.0.0-RC2" rev-constraint-default="4.0.0-RC2" rev-constraint-dynamic="4.0.0-RC2" callerrev="4.0.0.Final"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.1.3" rev-constraint-default="4.1.3" rev-constraint-dynamic="4.1.3" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="vraptor" type="jar" ext="jar" status="successful" details="" size="425557" time="1605" location="/home/agil9999/.ivy2/cache/br.com.caelum/vraptor/jars/vraptor-4.1.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/br/com/caelum/vraptor/4.1.3/vraptor-4.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.0.0-RC2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="4.1.3"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jodatime" conf="default, compile, runtime, master" rev="4.0.0-RC2" rev-constraint-default="4.0.0-RC2" rev-constraint-dynamic="4.0.0-RC2" callerrev="4.0.0.Final"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="4.1.0-RC2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default" position="-1">
+				<evicted-by rev="4.1.3"/>
+				<caller organisation="br.com.caelum.vraptor" name="vraptor-jpa" conf="default, compile, runtime, master" rev="4.1.0-RC2" rev-constraint-default="4.1.0-RC2" rev-constraint-dynamic="4.1.0-RC2" callerrev="4.0.2"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="4.1.3" rev-constraint-default="4.1.3" rev-constraint-dynamic="4.1.3" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="jstl">
+			<revision name="1.2" status="release" pubdate="20110623142002" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="33">
+				<metadata-artifact status="successful" details="" size="356" time="762" location="/home/agil9999/.ivy2/cache/javax.servlet/jstl/ivy-1.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.servlet/jstl/ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="default" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="jstl" type="jar" ext="jar" status="successful" details="" size="414240" time="1320" location="/home/agil9999/.ivy2/cache/javax.servlet/jstl/jars/jstl-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.validation" name="validation-api">
+			<revision name="1.1.0.Final" status="release" pubdate="20130410100303" resolver="public" artresolver="main" homepage="http://beanvalidation.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7860" time="676" location="/home/agil9999/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="default, compile, runtime, master" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="5.1.3.Final"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="validation-api" type="jar" ext="jar" status="successful" details="" size="63777" time="697" location="/home/agil9999/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.ejb" name="javax.ejb-api">
+			<revision name="3.2" status="release" pubdate="20130429141111" resolver="public" artresolver="main" homepage="http://ejb-spec.java.net" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="successful" details="" size="14477" time="693" location="/home/agil9999/.ivy2/cache/javax.ejb/javax.ejb-api/ivy-3.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.ejb/javax.ejb-api/ivy-3.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/ejb/javax.ejb-api/3.2/javax.ejb-api-3.2.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="javax.ejb-api" type="jar" ext="jar" status="successful" details="" size="63961" time="716" location="/home/agil9999/.ivy2/cache/javax.ejb/javax.ejb-api/jars/javax.ejb-api-3.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/ejb/javax.ejb-api/3.2/javax.ejb-api-3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.transaction" name="javax.transaction-api">
+			<revision name="1.2" status="release" pubdate="20130513100148" resolver="public" artresolver="main" homepage="http://jta-spec.java.net" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="successful" details="" size="13796" time="691" location="/home/agil9999/.ivy2/cache/javax.transaction/javax.transaction-api/ivy-1.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.transaction/javax.transaction-api/ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.pom"/>
+				<caller organisation="javax.ejb" name="javax.ejb-api" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.2"/>
+				<artifacts>
+					<artifact name="javax.transaction-api" type="jar" ext="jar" status="successful" details="" size="30724" time="679" location="/home/agil9999/.ivy2/cache/javax.transaction/javax.transaction-api/jars/javax.transaction-api-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.enterprise" name="cdi-api">
+			<revision name="1.1" status="release" pubdate="20130410134813" resolver="public" artresolver="main" homepage="http://www.seamframework.org/Weld" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="5834" time="660" location="/home/agil9999/.ivy2/cache/javax.enterprise/cdi-api/ivy-1.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.enterprise/cdi-api/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-api" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.1.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.1.2.Final"/>
+				<caller organisation="org.jboss.weld" name="weld-spi" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.1.Final"/>
+				<artifacts>
+					<artifact name="cdi-api" type="jar" ext="jar" status="successful" details="" size="70701" time="722" location="/home/agil9999/.ivy2/cache/javax.enterprise/cdi-api/jars/cdi-api-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.interceptor" name="javax.interceptor-api">
+			<revision name="1.2" status="release" pubdate="20130426110152" resolver="public" artresolver="main" homepage="http://interceptors-spec.java.net" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="successful" details="" size="13347" time="671" location="/home/agil9999/.ivy2/cache/javax.interceptor/javax.interceptor-api/ivy-1.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.interceptor/javax.interceptor-api/ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="javax.interceptor-api" type="jar" ext="jar" status="successful" details="" size="24404" time="673" location="/home/agil9999/.ivy2/cache/javax.interceptor/javax.interceptor-api/jars/javax.interceptor-api-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="javax.annotation-api">
+			<revision name="1.2" status="release" pubdate="20130426143829" resolver="public" artresolver="main" homepage="http://jcp.org/en/jsr/detail?id=250" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="successful" details="" size="13432" time="697" location="/home/agil9999/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="javax.annotation-api" type="jar" ext="jar" status="successful" details="" size="26366" time="683" location="/home/agil9999/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.2.4" status="release" pubdate="20130513185652" resolver="public" artresolver="main" homepage="http://code.google.com/p/google-gson/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="8038" time="656" location="/home/agil9999/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="successful" details="" size="190432" time="980" location="/home/agil9999/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.xstream" name="xstream">
+			<revision name="1.4.7" status="release" pubdate="20140208085119" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<metadata-artifact status="successful" details="" size="11236" time="673" location="/home/agil9999/.ivy2/cache/com.thoughtworks.xstream/xstream/ivy-1.4.7.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.thoughtworks.xstream/xstream/ivy-1.4.7.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.7/xstream-1.4.7.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.4.7" rev-constraint-default="1.4.7" rev-constraint-dynamic="1.4.7" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="xstream" type="jar" ext="jar" status="successful" details="" size="531571" time="1324" location="/home/agil9999/.ivy2/cache/com.thoughtworks.xstream/xstream/jars/xstream-1.4.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.7/xstream-1.4.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xpp3" name="xpp3_min">
+			<revision name="1.1.4c" status="release" pubdate="20071201070642" resolver="public" artresolver="main" homepage="http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<license name="Indiana University Extreme! Lab Software License, vesion 1.1.1" url="http://www.extreme.indiana.edu/viewcvs/~checkout~/XPP3/java/LICENSE.txt"/>
+				<license name="Public Domain" url="http://creativecommons.org/licenses/publicdomain"/>
+				<metadata-artifact status="successful" details="" size="1610" time="650" location="/home/agil9999/.ivy2/cache/xpp3/xpp3_min/ivy-1.1.4c.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/xpp3/xpp3_min/ivy-1.1.4c.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="compile, runtime" rev="1.1.4c" rev-constraint-default="1.1.4c" rev-constraint-dynamic="1.1.4c" callerrev="1.4.7"/>
+				<artifacts>
+					<artifact name="xpp3_min" type="jar" ext="jar" status="successful" details="" size="24956" time="695" location="/home/agil9999/.ivy2/cache/xpp3/xpp3_min/jars/xpp3_min-1.1.4c.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xmlpull" name="xmlpull">
+			<revision name="1.1.3.1" status="release" pubdate="20070319211831" resolver="public" artresolver="main" homepage="http://www.xmlpull.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<license name="Public Domain" url="http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="386" time="687" location="/home/agil9999/.ivy2/cache/xmlpull/xmlpull/ivy-1.1.3.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/xmlpull/xmlpull/ivy-1.1.3.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="compile, runtime" rev="1.1.3.1" rev-constraint-default="1.1.3.1" rev-constraint-dynamic="1.1.3.1" callerrev="1.4.7"/>
+				<artifacts>
+					<artifact name="xmlpull" type="jar" ext="jar" status="successful" details="" size="7188" time="660" location="/home/agil9999/.ivy2/cache/xmlpull/xmlpull/jars/xmlpull-1.1.3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="dom4j" name="dom4j">
+			<revision name="1.6.1" status="release" pubdate="20060210103318" resolver="public" artresolver="main" homepage="http://dom4j.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="38">
+				<metadata-artifact status="successful" details="" size="6765" time="819" location="/home/agil9999/.ivy2/cache/dom4j/dom4j/ivy-1.6.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/dom4j/dom4j/ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="4.3.7.Final"/>
+				<artifacts>
+					<artifact name="dom4j" type="jar" ext="jar" status="successful" details="" size="313898" time="1389" location="/home/agil9999/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.0.b2" status="release" pubdate="20070208223046" resolver="public" artresolver="main" homepage="http://xml.apache.org/commons/#external" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2249" time="753" location="/home/agil9999/.ivy2/cache/xml-apis/xml-apis/ivy-1.0.b2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/xml-apis/xml-apis/ivy-1.0.b2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom"/>
+				<caller organisation="dom4j" name="dom4j" conf="compile, runtime" rev="1.0.b2" rev-constraint-default="1.0.b2" rev-constraint-dynamic="1.0.b2" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="successful" details="" size="109318" time="857" location="/home/agil9999/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.0.b2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.7" status="release" pubdate="20140816172110" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<metadata-artifact status="successful" details="" size="5272" time="652" location="/home/agil9999/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.7.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.7.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.pom"/>
+				<caller organisation="br.com.caelum" name="iogi" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="1.0.0"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="paranamer" type="bundle" ext="jar" status="successful" details="" size="34604" time="704" location="/home/agil9999/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile(*), runtime(*)" position="-1">
+				<evicted-by rev="2.7"/>
+				<caller organisation="br.com.caelum" name="iogi" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.1-GA" status="release" pubdate="20130830135932" resolver="public" artresolver="main" homepage="http://www.javassist.org/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="9522" time="659" location="/home/agil9999/.ivy2/cache/org.javassist/javassist/ivy-3.18.1-GA.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/org.javassist/javassist/ivy-3.18.1-GA.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="3.18.1-GA" rev-constraint-default="3.18.1-GA" rev-constraint-dynamic="3.18.1-GA" callerrev="4.3.7.Final"/>
+				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="3.18.1-GA" rev-constraint-default="3.18.1-GA" rev-constraint-dynamic="3.18.1-GA" callerrev="4.3.7.Final"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="3.18.1-GA" rev-constraint-default="3.18.1-GA" rev-constraint-dynamic="3.18.1-GA" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="javassist" type="bundle" ext="jar" status="successful" details="" size="714194" time="1847" location="/home/agil9999/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.1-GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="br.com.caelum" name="iogi">
+			<revision name="1.0.0" status="release" pubdate="20140210122154" resolver="public" artresolver="main" homepage="https://github.com/rafaeldff/Iogi" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<metadata-artifact status="successful" details="" size="3901" time="693" location="/home/agil9999/.ivy2/cache/br.com.caelum/iogi/ivy-1.0.0.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/br.com.caelum/iogi/ivy-1.0.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/br/com/caelum/iogi/1.0.0/iogi-1.0.0.pom"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="iogi" type="jar" ext="jar" status="successful" details="" size="77874" time="756" location="/home/agil9999/.ivy2/cache/br.com.caelum/iogi/jars/iogi-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/br/com/caelum/iogi/1.0.0/iogi-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.vidageek" name="mirror">
+			<revision name="1.6.1" status="release" pubdate="20110319142504" resolver="public" artresolver="main" homepage="http://projetos.vidageek.net/mirror" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7882" time="676" location="/home/agil9999/.ivy2/cache/net.vidageek/mirror/ivy-1.6.1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/net.vidageek/mirror/ivy-1.6.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/vidageek/mirror/1.6.1/mirror-1.6.1.pom"/>
+				<caller organisation="br.com.caelum" name="iogi" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.0.0"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="mirror" type="jar" ext="jar" status="successful" details="" size="140514" time="869" location="/home/agil9999/.ivy2/cache/net.vidageek/mirror/jars/mirror-1.6.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/vidageek/mirror/1.6.1/mirror-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="15.0" status="release" pubdate="20130906165249" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="1">
+				<metadata-artifact status="successful" details="" size="6252" time="656" location="/home/agil9999/.ivy2/cache/com.google.guava/guava/ivy-15.0.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.google.guava/guava/ivy-15.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.pom"/>
+				<caller organisation="br.com.caelum" name="iogi" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="1.0.0"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="13.0.1" rev-constraint-default="13.0.1" rev-constraint-dynamic="13.0.1" callerrev="2.1.2.Final"/>
+				<caller organisation="br.com.caelum" name="vraptor" conf="default, compile, runtime, master" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2172168" time="4479" location="/home/agil9999/.ivy2/cache/com.google.guava/guava/bundles/guava-15.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="13.0.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="15.0"/>
+				<caller organisation="org.jboss.weld" name="weld-core-impl" conf="default, compile, runtime, master" rev="13.0.1" rev-constraint-default="13.0.1" rev-constraint-dynamic="13.0.1" callerrev="2.1.2.Final"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="11.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="15.0"/>
+				<caller organisation="br.com.caelum" name="iogi" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091013203500" resolver="public" artresolver="main" homepage="http://code.google.com/p/atinject/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="612" time="662" location="/home/agil9999/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="org.jboss.weld" name="weld-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="2.1.Final"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.1"/>
+				<caller organisation="org.jboss.weld" name="weld-spi" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="2.1.Final"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="successful" details="" size="2497" time="666" location="/home/agil9999/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

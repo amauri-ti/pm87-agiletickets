@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.jboss.weld"
+		module="weld-core-impl"
+		revision="2.1.2.Final"
+		status="release"
+		publication="20140109062756"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html" />
+		<description homepage="http://weld.cdi-spec.org">
+		Weld&apos;s implementation of CDI
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="weld-core-impl" type="jar" ext="jar" conf="master"/>
+		<artifact name="weld-core-impl" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="weld-core-impl" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="javax.enterprise" name="cdi-api" rev="1.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.jboss.spec.javax.interceptor" module="jboss-interceptors-api_1.1_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="javax.annotation" module="jsr250-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="javax.el" module="el-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jboss.weld" name="weld-api" rev="2.1.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.weld" name="weld-spi" rev="2.1.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.classfilewriter" name="jboss-classfilewriter" rev="1.0.4.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.spec.javax.ejb" name="jboss-ejb-api_3.1_spec" rev="1.0.2.Final" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.jboss.spec.javax.servlet" name="jboss-servlet-api_3.0_spec" rev="1.0.2.Final" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="javax.transaction" name="jta" rev="1.1" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.jboss.spec.javax.annotation" name="jboss-annotations-api_1.2_spec" rev="1.0.0.Alpha1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="javax.persistence" name="persistence-api" rev="1.0.2" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.google.guava" name="guava" rev="13.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.spec.javax.el" name="jboss-el-api_3.0_spec" rev="1.0.0.Alpha1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.spec.javax.interceptor" name="jboss-interceptors-api_1.2_spec" rev="1.0.0.Alpha3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.logging" name="jboss-logging-processor" rev="1.1.0.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.jboss.logging" name="jboss-logging" rev="3.1.3.GA" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="net.sourceforge.findbugs" name="annotations" rev="1.3.2" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.8.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.logmanager" name="jboss-logmanager" rev="1.2.2.GA" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.jboss.weld" module="weld-porting-package-tck11" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-glassfish-remote-3.1" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.wildfly" module="wildfly-arquillian-common" matcher="exact" rev="8.0.0.Beta1"/>
+		<override org="org.jboss.weld" module="weld-core" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.weld" module="weld-spi" matcher="exact" rev="2.1.Final"/>
+		<override org="org.jboss.weld.se" module="weld-se" matcher="exact" rev="2.1.2.Final"/>
+		<override org="javax.enterprise" module="cdi-api" matcher="exact" rev="1.1"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-api" matcher="exact" rev="1.1.3"/>
+		<override org="org.jboss.ejb3" module="jboss-ejb3-ext-api" matcher="exact" rev="2.0.0"/>
+		<override org="javax.inject" module="javax.inject-tck" matcher="exact" rev="1"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-tomcat-embedded-6" matcher="exact" rev="1.0.0.CR4"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-tomcat-embedded-7" matcher="exact" rev="1.0.0.CR4"/>
+		<override org="org.glassfish" module="javax.el" matcher="exact" rev="3.0.0"/>
+		<override org="javax.el" module="javax.el-api" matcher="exact" rev="3.0.0"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl" matcher="exact" rev="1.1.0-beta-1"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.1.3.GA"/>
+		<override org="org.jboss.weld.se" module="weld-se-core" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_3.0_spec" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.weld" module="weld-core-impl" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging-processor" matcher="exact" rev="1.1.0.Final"/>
+		<override org="org.jboss.classfilewriter" module="jboss-classfilewriter" matcher="exact" rev="1.0.4.Final"/>
+		<override org="javax.inject" module="javax.inject" matcher="exact" rev="1"/>
+		<override org="org.jboss.weld" module="weld-api" matcher="exact" rev="2.1.Final"/>
+		<override org="org.jboss.spec.javax.ws.rs" module="jboss-jaxrs-api_1.1_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="javax.persistence" module="persistence-api" matcher="exact" rev="1.0.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.8.1"/>
+		<override org="org.jboss.spec.javax.el" module="jboss-el-api_3.0_spec" matcher="exact" rev="1.0.0.Alpha1"/>
+		<override org="org.jboss.logmanager" module="jboss-logmanager" matcher="exact" rev="1.2.2.GA"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-container" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.databene" module="contiperf" matcher="exact" rev="1.06"/>
+		<override org="net.sourceforge.htmlunit" module="htmlunit" matcher="exact" rev="2.4"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.1"/>
+		<override org="org.jboss.cdi.tck" module="cdi-tck-ext-lib" matcher="exact" rev="1.1.2.Final"/>
+		<override org="javax.activation" module="activation" matcher="exact" rev="1.1"/>
+		<override org="org.jboss.spec.javax.interceptor" module="jboss-interceptors-api_1.2_spec" matcher="exact" rev="1.0.0.Alpha3"/>
+		<override org="org.jboss.jbossas.as7-cdi-tck" module="jbossas-container" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.wildfly" module="wildfly-arquillian-container-managed" matcher="exact" rev="8.0.0.Beta1"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-spi" matcher="exact" rev="1.1.3"/>
+		<override org="org.wildfly" module="wildfly-arquillian-container-remote" matcher="exact" rev="8.0.0.Beta1"/>
+		<override org="javax.validation" module="validation-api" matcher="exact" rev="1.0.0.GA"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.2"/>
+		<override org="javax.transaction" module="jta" matcher="exact" rev="1.1"/>
+		<override org="org.jboss" module="jboss-vfs" matcher="exact" rev="2.1.3.SP1"/>
+		<override org="org.jboss.spec.javax.ejb" module="jboss-ejb-api_3.2_spec" matcher="exact" rev="1.0.0.Alpha2"/>
+		<override org="javax.servlet.jsp" module="jsp-api" matcher="exact" rev="2.2"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-weld-ee-embedded-1.1" matcher="exact" rev="1.0.0.CR7"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-spi" matcher="exact" rev="1.0.2.Final"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.17"/>
+		<override org="org.jboss.spec.javax.faces" module="jboss-jsf-api_2.2_spec" matcher="exact" rev="2.2.4"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-impl-base" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-impl-base" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-spi" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-glassfish-embedded-3.1" matcher="exact" rev="1.0.0.CR1"/>
+		<override org="org.jboss.weld" module="weld-core-test" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.spec.javax.ejb" module="jboss-ejb-api_3.1_spec" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.weld.servlet" module="weld-servlet-core" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jetty-embedded-7" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-jetty-embedded-9" matcher="exact" rev="1.0.0.CR2"/>
+		<override org="org.testng" module="testng" matcher="exact" rev="5.10"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="13.0.1"/>
+		<override org="org.jboss.spec.javax.annotation" module="jboss-annotations-api_1.2_spec" matcher="exact" rev="1.0.0.Alpha1"/>
+		<override org="org.jboss.weld.servlet" module="weld-servlet" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.jboss.weld" module="weld-core-jsf" matcher="exact" rev="2.1.2.Final"/>
+		<override org="org.glassfish.web" module="el-impl" matcher="exact" rev="2.1.2-b04"/>
+		<override org="org.jboss.spec.javax.jms" module="jboss-jms-api_1.1_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-impl-base" matcher="exact" rev="1.1.3"/>
+	</dependencies>
+</ivy-module>

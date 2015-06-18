@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="agiletickets"
+		module="agiletickets"
+		revision="working@caelum-20120927-15"
+		conf="minify"
+		confs="default, provided, test, acceptance-test, minify"
+		date="20150121090039"/>
+	<dependencies>
+		<module organisation="com.yahoo.platform.yui" name="yuicompressor">
+			<revision name="2.4.8" status="release" pubdate="20140921130323" resolver="public" artresolver="main" homepage="http://developer.yahoo.com/yui/compressor/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="BSD License" url="http://developer.yahoo.com/yui/license.html"/>
+				<metadata-artifact status="successful" details="" size="1875" time="662" location="/home/agil9999/.ivy2/cache/com.yahoo.platform.yui/yuicompressor/ivy-2.4.8.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/com.yahoo.platform.yui/yuicompressor/ivy-2.4.8.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/yahoo/platform/yui/yuicompressor/2.4.8/yuicompressor-2.4.8.pom"/>
+				<caller organisation="agiletickets" name="agiletickets" conf="minify" rev="2.4.8" rev-constraint-default="2.4.8" rev-constraint-dynamic="2.4.8" callerrev="working@caelum-20120927-15"/>
+				<artifacts>
+					<artifact name="yuicompressor" type="jar" ext="jar" status="successful" details="" size="787509" time="3155" location="/home/agil9999/.ivy2/cache/com.yahoo.platform.yui/yuicompressor/jars/yuicompressor-2.4.8.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/yahoo/platform/yui/yuicompressor/2.4.8/yuicompressor-2.4.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="rhino" name="js">
+			<revision name="1.7R2" status="release" pubdate="20090821110542" resolver="public" artresolver="main" homepage="http://www.mozilla.org/rhino/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="1">
+				<license name="Mozilla Public License" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<metadata-artifact status="successful" details="" size="832" time="645" location="/home/agil9999/.ivy2/cache/rhino/js/ivy-1.7R2.xml" searched="true" original-local-location="/home/agil9999/.ivy2/cache/rhino/js/ivy-1.7R2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/rhino/js/1.7R2/js-1.7R2.pom"/>
+				<caller organisation="com.yahoo.platform.yui" name="yuicompressor" conf="default, compile, runtime, master" rev="1.7R2" rev-constraint-default="1.7R2" rev-constraint-dynamic="1.7R2" callerrev="2.4.8"/>
+				<artifacts>
+					<artifact name="js" type="jar" ext="jar" status="successful" details="" size="871260" time="3755" location="/home/agil9999/.ivy2/cache/rhino/js/jars/js-1.7R2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/rhino/js/1.7R2/js-1.7R2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
