@@ -1,12 +1,48 @@
 package br.com.caelum.agiletickets.models;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.List;
+
+import org.joda.time.LocalDate;
+import org.joda.time.LocalTime;
 import org.junit.Test;
 
 public class EspetaculoTest {
-
+	
+	@Test
+	public void deveCriar3Sessoes(){
+	
+		LocalDate dtIni = new LocalDate(2015,6,1);
+		LocalDate dtFim = new LocalDate(2015,6,3);
+		LocalTime time = new LocalTime();
+		
+		Espetaculo esp = new Espetaculo();
+		
+		List<Sessao> sessao =  esp.criaSessoes(dtIni, dtFim, time, Periodicidade.DIARIA);
+	
+			assertEquals(3,sessao.size());
+		
+	}
+	
+	@Test
+	public void deveCriar4Sessoes(){
+	
+		LocalDate dtIni = new LocalDate(2015,6,1);
+		LocalDate dtFim = new LocalDate(2015,6,30);
+		LocalTime time = new LocalTime();
+		
+		Espetaculo esp = new Espetaculo();
+		
+		List<Sessao> sessao =  esp.criaSessoes(dtIni, dtFim, time, Periodicidade.SEMANAL);
+	
+			assertEquals(5,sessao.size());
+		
+	}
+	
+	
 	@Test
 	public void deveInformarSeEhPossivelReservarAQuantidadeDeIngressosDentroDeQualquerDasSessoes() {
 		Espetaculo ivete = new Espetaculo();

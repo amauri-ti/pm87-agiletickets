@@ -6,6 +6,14 @@ import org.junit.Test;
 public class SessaoTest {
 
 	@Test
+	public void deveVenderMenorOuIgualDisponivel() throws Exception {
+		Sessao sessao = new Sessao();
+        sessao.setTotalIngressos(2);
+
+        Assert.assertTrue(sessao.podeReservar(2));
+	}
+	
+	@Test
 	public void deveVender1ingressoSeHa2vagas() throws Exception {
 		Sessao sessao = new Sessao();
         sessao.setTotalIngressos(2);
